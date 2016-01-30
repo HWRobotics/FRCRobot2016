@@ -29,6 +29,7 @@ OI::OI() {
     driveNormalButton.reset(new JoystickButton(driveJoy.get(), 1));
     driveNormalButton->WhileHeld(new DriveNormal());
 
+
     // SmartDashboard Buttons
     SmartDashboard::PutData("DriveStraight", new DriveStraight());
     SmartDashboard::PutData("DriveNormal", new DriveNormal());
